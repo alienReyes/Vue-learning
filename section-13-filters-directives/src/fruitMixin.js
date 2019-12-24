@@ -1,5 +1,7 @@
 
 // The mixin is a constant and is an object with all the code we want to pass
+// Vue will merge mixins, they can't destroy and the component is added last
+// that means the component will append to the mixin
 
 export const fruitMixin={
   data() {
