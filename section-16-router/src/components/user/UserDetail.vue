@@ -23,6 +23,14 @@ export default {
         hash: "#data"
       }
     };
+  },
+  // This is like  lifecycle methode which means it loads
+  // before the component is created
+  beforeRouteEnter(to, from, next) {
+    // if we don't call next this component does not exist
+    // if it does note exist we can't access data dah!
+    // we can validate the access to the route
+    next();
   }
 };
 </script>
